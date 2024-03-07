@@ -1,0 +1,51 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenedor {
+    display: flex;
+    /*min-height: 100vh;*/
+}
+
+.armado {
+    position: relative;
+    margin: 0 auto;
+    /*height: 100vh;*/
+    width: 600px;
+    overflow: hidden;
+}
+.titulo {
+    text-align: center;
+}
+
+.boton {
+    background-color: #47a386;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 9, 0.3);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+input {
+    box-shadow: 0 2px 4px rgba(0, 0, 9, 0.2);
+}
+
+#textoC {
+    width: 590px;
+    box-shadow: 0 2px 4px rgba(0, 0, 9, 0.2);
+}
+
+.mensaje {
+    color: rgb(197, 85, 85);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}

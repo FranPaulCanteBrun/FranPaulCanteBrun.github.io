@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="../estilos/style-productos.css">
+    <script defer src="../js/script-productos.js"></script>
+</head>
+
+<body onload="cargarFunciones()">
+    <div class="contenedor">
+        <div class="armado">
+            <div class="menu">
+                <a href="../index.html"><span class="logo"><img src="../img/logo.png" alt="" class="logo"></span></a>
+                <span class="contieneLista">
+                    <ul>
+                        <li id="productos"></li>
+                        <li id="contacto"></li>
+                    </ul>
+                </span>
+                <span class="posBoton"><button class="boton" id="ingreso"><img src="../img/user.png" alt=""
+                            id="userImg">Iniciar Sesión</button></span>
+                <span class="usuario" id="laSesion"></span>
+                <span class="usuario" id="datosUser"></span>
+                <span id="btnSalir"></span>
+            </div>
+
+
+            <main id="principal">
+                <header>
+                    <h1>Nuestros productos</h1>
+                </header>
+                <div class="btnCompra"><button class="boton" onclick="mandoDatos()">Comprar</button></div>
+                <div class="cantC" id="cantC"></div>
+                <h2 id="televisor" style="text-align: center;">Televisores</h2>
+                <div class="contenedor-producto">
+
+                    <div class="producto">
+                        <img class="imagen" src="../img/tv_philips_32pulgadas.jpg" alt="Televisor Philips 32 pulgadas">
+                        <h3>SMART TV Philips 32 Pulgadas</h3>
+                        <p class="descripcion">Televisor Philips 32 pulgadas, SMART TV</p>
+                        <span>$</span>
+                        <p class="precio">247000</p>
+                        <p class="categoria">Televisor</p>
+                        <button class="añadir-carrito" data-id="1">Añadir al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img class="imagen" src="../img/crown-mustang-tv.jpg" alt="Televisor Crown Mustang">
+                        <h3>SMART TV Crown Mustang 32 Pulgadas</h3>
+                        <p class="descripcion">Televisor Crown Mustang 32 pulgadas, GOOGLE TV</p>
+                        <span>$</span>
+                        <p class="precio">439999</p>
+                        <p class="categoria">Televisor</p>
+                        <button class="añadir-carrito" data-id-producto="2">Añadir al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img class="imagen" src="../img/philips-43pulgadas.jpg" alt="Televisor Philips 42 pulgadas">
+                        <h3>SMART TV Philips 42 Pulgadas</h3>
+                        <p class="descripcion">Televisor Philips 42 pulgadas, SMART TV</p>
+                        <span>$</span>
+                        <p class="precio">449999</p>
+                        <p class="categoria">Televisor</p>
+                        <button class="añadir-carrito" data-id-producto="3">Añadir al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img class="imagen" src="../img/smart-tv-enova-32pulgadas_1.jpg"
+                            alt="Televisor Philips 42 pulgadas">
+                        <h3>E-Nova Smart Tv 32 Pulgadas</h3>
+                        <p class="descripcion">SMART TV E-NOVA 32 PULGADAS HD TE32HA10</p>
+                        <span>$</span>
+                        <p class="precio">229999</p>
+                        <p class="categoria">Televisor</p>
+                        <button class="añadir-carrito" data-id-producto="4">Añadir al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img class="imagen" src="../img/smart-tv-bgh-32pulgadas_1.jpg"
+                            alt="Televisor Philips 42 pulgadas">
+                        <h3>BGH Smart TV 32 Pulgadas</h3>
+                        <p class="descripcion">SMART TV BGH 32 PULGADAS HD B3222S5A</p>
+                        <span>$</span>
+                        <p class="precio">248999</p>
+                        <p class="categoria">Televisor</p>
+                        <button class="añadir-carrito" data-id-producto="5">Añadir al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img class="imagen" src="../img/smart-led-googletv-philips-32pulgadas.jpg"
+                            alt="Televisor Philips 42 pulgadas">
+                        <h3>Piliphs Smart TV 32 Pulgadas</h3>
+                        <p class="descripcion">SMART LED GOOGLE TV PHILIPS 32 PULGADAS HD 32PHD6918/77</p>
+                        <span>$</span>
+                        <p class="precio">327359</p>
+                        <p class="categoria">Televisor</p>
+                        <button class="añadir-carrito" data-id-producto="6">Añadir al carrito</button>
+                    </div>
+                </div>
+                <br>
+                <h2 id="celulares" style="text-align: center;">Celulares</h2>
+                <div class="contenedor-producto">
+                    <div class="producto">
+                        <img class="imagen" src="../img/samsung-044e.jpg" alt="Televisor Philips 32 pulgadas">
+                        <h3>Samsung A04E</h3>
+                        <p class="descripcion">CELULAR SAMSUNG A04E / SM-A042M NEGRO</p>
+                        <span>$</span>
+                        <p class="precio">224999</p>
+                        <p class="categoria">Celular</p>
+                        <button class="añadir-carrito" data-id-producto="7">Añadir al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img class="imagen" src="../img/samsung-a14-sm.jpg" alt="Televisor Crown Mustang">
+                        <h3>Samsung A14</h3>
+                        <p class="descripcion">CELULAR SAMSUNG A14 SM-A145M NEGRO</p>
+                        <span>$</span>
+                        <p class="precio">254999</p>
+                        <p class="categoria">Celular</p>
+                        <button class="añadir-carrito" data-id-producto="8">Añadir al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img class="imagen" src="../img/samsung-galaxy-a54.webp" alt="Televisor Philips 42 pulgadas">
+                        <h3>Samsung Galaxy A54</h3>
+                        <p class="descripcion">CELULAR SAMSUNG GALAXY A54 SM-A546E LIME</p>
+                        <span>$</span>
+                        <p class="precio">499999</p>
+                        <p class="categoria">Celular</p>
+                        <button class="añadir-carrito" data-id-producto="9">Añadir al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img class="imagen" src="../img/samsung-galaxy-s23-colorcrema.webp"
+                            alt="Televisor Philips 42 pulgadas">
+                        <h3>Samsung Galaxy S23</h3>
+                        <p class="descripcion">CELULAR SAMSUNG GALAXY S23 FE SM-S711B CREAM</p>
+                        <span>$</span>
+                        <p class="precio">1164999</p>
+                        <p class="categoria">Celular</p>
+                        <button class="añadir-carrito" data-id-producto="10">Añadir al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img class="imagen" src="../img/samsung-galaxy-s23-colorgrafito.webp"
+                            alt="Televisor Philips 42 pulgadas">
+                        <h3>Samsung Galaxy S23</h3>
+                        <p class="descripcion">CELULAR SAMSUNG GALAXY S23 FE SM-S711B MINT</p>
+                        <span>$</span>
+                        <p class="precio">1164999</p>
+                        <p class="categoria">Celular</p>
+                        <button class="añadir-carrito" data-id-producto="10">Añadir al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img class="imagen" src="../img/samsung-galaxy-s23-colormenta.webp"
+                            alt="Televisor Philips 42 pulgadas">
+                        <h3>Samsung Galaxy S23</h3>
+                        <p class="descripcion">CELULAR SAMSUNG GALAXY S23 FE SM-S711B CREAM</p>
+                        <span>$</span>
+                        <p class="precio">1164999</p>
+                        <p class="categoria">Celular</p>
+                        <button class="añadir-carrito" data-id-producto="11">Añadir al carrito</button>
+                    </div>
+                </div>
+                <br>
+                <h2 id="notebooks" style="text-align: center;">Notebooks</h2>
+                <div class="contenedor-producto">
+                    <div class="producto">
+                        <img class="imagen" src="../img/notebook-gamer-asusrog.webp"
+                            alt="Televisor Philips 32 pulgadas">
+                        <h3>Notebook Asus Rog Strix</h3>
+                        <p class="descripcion">NOTEBOOK GAMER ASUS ROG STRIX SCAR 18 G834JY-N6016W - 90NR0CG1-M00150
+                            INTEL CORE I9</p>
+                        <span>$</span>
+                        <p class="precio">6999999</p>
+                        <p class="categoria">Notebook</p>
+                        <button class="añadir-carrito" data-id-producto="12">Añadir al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img class="imagen" src="../img/notebook-lenovo-legion5.webp" alt="Televisor Crown Mustang">
+                        <h3>Notebook Lenovo Legion 5</h3>
+                        <p class="descripcion">NOTEBOOK LENOVO LEGION 5 15ITH6H - 82JH00LBAR INTEL CORE I7</p>
+                        <span>$</span>
+                        <p class="precio">3599999</p>
+                        <p class="categoria">Notebook</p>
+                        <button class="añadir-carrito" data-id-producto="13">Añadir al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img class="imagen" src="../img/notebook-enova-c14.webp" alt="Televisor Philips 42 pulgadas">
+                        <h3>Notebook E-Nova C14</h3>
+                        <p class="descripcion">NOTEBOOK E-NOVA C141EK7-CI7I-48 INTEL CORE I7</p>
+                        <span>$</span>
+                        <p class="precio">3399999</p>
+                        <p class="categoria">Notebook</p>
+                        <button class="añadir-carrito" data-id-producto="14">Añadir al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img class="imagen" src="../img/notebook-hp-15.webp" alt="Televisor Philips 42 pulgadas">
+                        <h3>Notebook HP 15</h3>
+                        <p class="descripcion">NOTEBOOK HP 15-DY5033DX INTEL CORE I3</p>
+                        <span>$</span>
+                        <p class="precio">1199999</p>
+                        <p class="categoria">Notebook</p>
+                        <button class="añadir-carrito" data-id-producto="15">Añadir al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img class="imagen" src="../img/notebook-daewoo-dw.webp" alt="Televisor Philips 42 pulgadas">
+                        <h3>Notebook Daewoo DW</h3>
+                        <p class="descripcion">NOTEBOOK DAEWOO DW-N14GR3001 INTEL CELERON</p>
+                        <span>$</span>
+                        <p class="precio">1249999</p>
+                        <p class="categoria">Notebook</p>
+                        <button class="añadir-carrito" data-id-producto="16">Añadir al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img class="imagen" src="../img/notebook-acer-aspire3.webp" alt="Televisor Philips 42 pulgadas">
+                        <h3>Notebook Acer Aspire 3</h3>
+                        <p class="descripcion">NOTEBOOK ACER ASPIRE 3 A315-24P-R9AU AMD R5</p>
+                        <span>$</span>
+                        <p class="precio">500000</p>
+                        <p class="categoria">Notebook</p>
+                        <button class="añadir-carrito" data-id-producto="17">Añadir al carrito</button>
+                    </div>
+                </div>
+                <footer>
+                    <div class="pie">
+                        <p class="integrantes">Sitio web creado por Abel Berges, Franco Paul Cantero Brunelli, Pablo
+                            Cassani y Matias Chico</p>
+                        <p class="copyright">@Copyright 2024</p>
+                    </div>
+                </footer>
+            </main>
+            <div class="mostrar-modal" id="mostrar-modal">
+                <div class="modal" id="modal">
+                    <h1>Iniciar Sesión</h1>
+                    <form action="" name="ingreso">
+                        <label for="">Usuario</label>
+                        <input type="text" name="usuario"><br>
+                        <span class="lbl"></span>
+                        <label for="">Contraseña</label>
+                        <input type="password" name="clave"><br>
+                        <span class="lbl"></span>
+                        <span class="ubicarSubmit"><button type="button" class="botonSubmit" id="vaRegistro">¿No tienes
+                                cuenta? Registrate</button></span>
+                        <span class="ubicarSubmit"><button class="botonSubmit" id="olvidoPass">¿Olvido su
+                                contraseña?</button></span>
+                        <span class="ubicoBoton"><button type="submit" class="boton" name="iSesion"
+                                id="iSesion">Ingresar</button></span>
+                        <span class="ubicoBoton"><button class="boton" id="cerrar">Cerrar</button></span>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Acá empieza el armado de la ventana modal -->
+
+            <div class="mostrarRegistro" id="mostrarRegistro">
+                <div class="modalRegistro" id="modalRegistro">
+                    <form action="" name="registro">
+                        <h1>Registro</h1>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre"><br>
+                        <span class="lbl"></span>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" id="apellido"><br>
+                        <span class="lbl"></span>
+                        <label for="mail">Correo</label>
+                        <input type="text" name="mail" id="mail"><br>
+                        <span class="lbl"></span>
+                        <label for="dni">DNI</label>
+                        <input type="number" name="dni" id="dni"><br>
+                        <span class="lbl"></span>
+                        <label for="direccion">Dirección</label>
+                        <input type="text" name="direccion" id="direccion"><br>
+                        <span class="lbl"></span>
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" name="telefono" id="telefono"><br>
+                        <span class="lbl"></span>
+                        <label for="usuario">Usuario</label>
+                        <input type="text" name="usuario" id="usuario"><br>
+                        <span class="lbl"></span>
+                        <label for="clave">Contraseña</label>
+                        <input type="password" name="clave" id="clave"><br>
+                        <span class="lbl"></span>
+                        <div class="alinearBotones"><span class="ubicoBoton2"><button class="botonSubmit"
+                                    id="registro">Registrarme</button></span></div>
+                    </form>
+
+                    <span class="ubicoBoton2"><button class="boton" id="cerrar2">Cerrar</button></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

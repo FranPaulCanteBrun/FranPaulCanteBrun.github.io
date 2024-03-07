@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de su empresa - Contacto</title>
+    <link rel="stylesheet" href="../estilos/contac.css">
+ 
+    <script src="../js/contact.js" defer></script>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="armado">
+            <span class="titulo"><h3>Formulario de contacto</h3></span>
+            <form name="contactar" id="miForm">
+                <label for="nomC">Nombre</label>
+                <input type="text" name="nomC" id="nomC"><br>
+                <span id="mesNom"></span>
+                <label for="correoC">Correo</label>
+                <input type="text" name="correoC" id="correoC"><br>
+                <span id="mesCorreo"></span>
+                <label for="telC">Teléfono</label>
+                <input type="text" name="telC" id="telC"><br>
+                <span id="mesTel"></span>
+                <label for="textoC">Mensaje</label><br>
+                <textarea name="textoC" id="textoC" cols="30" rows="10"></textarea><br>
+                <span id="mesTexto"></span>
+            </form>
+            <br>
+            <button class="boton" onclick="envio()">Enviar</button>
+        </div>
+    </div>
+</body>
+</html>
+

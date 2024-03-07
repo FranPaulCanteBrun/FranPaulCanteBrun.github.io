@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de su Empresa</title>
+    <link rel="stylesheet" href="../estilos/style-carrito.css">
+</head>
+
+<body onload="cargarFunciones()">
+    <div class="contenedor">
+        <div class="armado">
+            <div class="menu">
+                <span class="logo"><a href="../index.html"><img src="../img/logo.png" alt="" class="logo"></a></span>
+                <span class="contieneLista">
+                    <ul>
+                        <li id="productos"></li>
+                        <li id="contacto"></li>
+
+                    </ul>
+                </span>
+                <span class="posBoton"><button class="boton" id="ingreso"><img src="../img/user.png" alt=""
+                            id="userImg">Iniciar Sesión</button></span>
+                <span class="usuario" id="laSesion"></span>
+                <span class="usuario" id="datosUser"></span>
+                <span id="btnSalir"></span>
+            </div>
+            <br> <br> <br> <br> <br>
+            <div id="principal">
+                <div style="padding-left: 200px;">
+    
+                    <h1>Carrito de compras</h1>
+                    <section id="perfil"> </section><br><br>
+    
+                    <section id="product"> </section><br><br>
+                </div>
+                <div class="posPrecio">
+                    <strong class="totalCarro">Total</strong>
+                    <span class="totalCarroPrecio">$0</span>
+                </div>
+                <div class="posCompraFinal"><button class="boton">Completar la compra</button></div>
+            </div>
+        </div>
+
+        <div class="mostrar-modal" id="mostrar-modal">
+            <div class="modal" id="modal">
+                <h1>Iniciar Sesión</h1>
+                <form action="" name="ingreso">
+                    <label for="">Usuario</label>
+                    <input type="text" name="usuario"><br>
+                    <span class="lbl"></span>
+                    <label for="">Contraseña</label>
+                    <input type="password" name="clave"><br>
+                    <span class="lbl"></span>
+                    <span class="ubicarSubmit"><button type="button" class="botonSubmit" id="vaRegistro">¿No tienes cuenta?
+                            Registrate</button></span>
+                    <span class="ubicarSubmit"><button class="botonSubmit" id="olvidoPass">¿Olvido su
+                            contraseña?</button></span>
+                    <span class="ubicoBoton"><button type="submit" class="boton" name="iSesion"
+                            id="iSesion">Ingresar</button></span>
+                    <span class="ubicoBoton"><button class="boton" id="cerrar">Cerrar</button></span>
+                </form>
+            </div>
+        </div>
+    
+        <!-- Acá empieza el armado de la ventana modal -->
+    
+        <div class="mostrarRegistro" id="mostrarRegistro">
+            <div class="modalRegistro" id="modalRegistro">
+                <form action="" name="registro">
+                    <h1>Registro</h1>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre"><br>
+                    <span class="lbl"></span>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido"><br>
+                    <span class="lbl"></span>
+                    <label for="mail">Correo</label>
+                    <input type="text" name="mail" id="mail"><br>
+                    <span class="lbl"></span>
+                    <label for="dni">DNI</label>
+                    <input type="number" name="dni" id="dni"><br>
+                    <span class="lbl"></span>
+                    <label for="direccion">Dirección</label>
+                    <input type="text" name="direccion" id="direccion"><br>
+                    <span class="lbl"></span>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" name="telefono" id="telefono"><br>
+                    <span class="lbl"></span>
+                    <label for="usuario">Usuario</label>
+                    <input type="text" name="usuario" id="usuario"><br>
+                    <span class="lbl"></span>
+                    <label for="clave">Contraseña</label>
+                    <input type="password" name="clave" id="clave"><br>
+                    <span class="lbl"></span>
+                    <div class="alinearBotones"><span class="ubicoBoton2"><button class="botonSubmit"
+                                id="registro">Registrarme</button></span>
+                </form>
+    
+                <span class="ubicoBoton2"><button class="boton" id="cerrar2">Cerrar</button></span>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    </div>
+    <script src="../js/script-productos.js"></script>
+    <script src="../js/carrito.js"></script>
+
+</body>
+<footer>
+    <!--<div class="pie"> <p>@Copyright 2024</p> </div>-->
+</footer>
+
+</html>
